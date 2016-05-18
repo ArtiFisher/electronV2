@@ -1,0 +1,16 @@
+.app .input-form {
+	display: none;
+}
+
+.app.filling-form .input-form {
+	display: block;
+}
+
+.app.filling-form button.next,
+.app.filling-form button.result {
+	display: none;
+}
+
+.templates {
+	display: none;
+}
