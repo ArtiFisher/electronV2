@@ -1,0 +1,31 @@
+body {
+	padding: 10px;
+}
+
+.app .input-form {
+	display: none;
+}
+
+.app.filling-form .input-form {
+	display: block;
+}
+
+.app.filling-form button.next,
+.app.filling-form button.result,
+button.save,
+button.cancel {
+	display: none;
+}
+
+.app.filling-form button.save,
+.app.filling-form button.cancel {
+	display: inline-block;
+}
+
+.preview {
+	margin-bottom: 15px;
+}
+
+.templates {
+	display: none;
+}

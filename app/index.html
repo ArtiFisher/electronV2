@@ -4,32 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 </head>
 
 <body>
     <div id="app" class="app">
-      <textarea id="intro-input"></textarea>
-      <div id="output" class="output">
+      <div class="form-group">
+        <label for="intro-input">Intro</label>
+        <textarea id="intro-input" class="form-control"></textarea>
+      </div>
+      <div id="preview" class="preview">
           
       </div>
       <div id="input-form" class="input-form">
-        <input id="name-input" required class="name-input" placeholder="Name" value="name"/>
-        <input id="surname-input" required class="surname-input" placeholder="Surname" value="surname"/>
-        <input id="imageURL-input" required class="imageURL-input" placeholder="Image URL" value="https://placeholdit.imgix.net/~text?w=150&h=200"/>
-        <input id="unit-input" required class="unit-input" placeholder="Unit" value="unit"/>
-        <input id="title-input" required class="title-input" placeholder="Title" value="title"/>
-        <input id="skype-input" class="skype-input" placeholder="Skype" value="skype"/>
-        <input id="mail-input" required class="mail-input" placeholder="Mail" value="mail"/>
-        <textarea id="description-input" class="description-input" placeholder="Description">Description</textarea>
-        <button id="save" class="save">Save</button>
-        <button id="cancel" class="cancel">Cancel</button>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" required class="name form-control" placeholder="Name" value="name"/>
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input id="surname" required class="surname form-control" placeholder="Surname" value="surname"/>
+        </div>
+        <div class="form-group">
+          <label for="imageURL">Image URL</label>
+          <input id="imageURL" required class="imageURL form-control" placeholder="Image URL" value="https://placeholdit.imgix.net/~text?w=150&h=200"/>
+        </div>
+        <div class="form-group">
+          <label for="unit">Unit</label>
+          <input id="unit" required class="unit form-control" placeholder="Unit" value="unit"/>
+        </div>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input id="title" required class="title form-control" placeholder="Title" value="title"/>
+        </div>
+        <div class="form-group">
+          <label for="skype">Skype</label>
+          <input id="skype" class="skype form-control" placeholder="Skype" value="skype"/>
+        </div>
+        <div class="form-group">
+          <label for="mail">Mail</label>
+          <input id="mail" required class="mail form-control" placeholder="Mail" value="mail"/>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" class="description form-control" placeholder="Description">Description</textarea>
+        </div>
       </div>
-      <button id="next" class="next">Next</button>
-      <button id="result" class="result">Create</button>
+      <button id="save" class="save btn btn-default">Save</button>
+      <button id="cancel" class="cancel btn btn-default">Cancel</button>
+      <button id="next" class="next btn btn-default">Next</button>
+      <button id="result" class="result btn btn-default">Create</button>
     </div>
 </body>
-<script type="text/javascript" src="html.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="js/templateParts.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </html>
